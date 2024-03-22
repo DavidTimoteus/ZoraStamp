@@ -61,3 +61,21 @@
         padding-top: 320px;
     }
 }
+.footer{
+    width: 100%;
+}
+.footer-bs {
+    background-color: #3c3d41;
+    padding: 60px 40px;
+    color: rgba(255,255,255,1.00);
+    margin-bottom: 0;
+}
+
+.footer-bs .footer-brand h2 {
+    margin: 0;
+    font-size: 24px; /* Adjust font size as needed */
+}
+
+.footer-bs .footer-brand img {
+    margin-right: 10px; /* Adjust margin between logo and text */
+}
