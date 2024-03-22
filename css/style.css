@@ -20,6 +20,7 @@
     transition: 0.7s;
     cursor: pointer;
 }
+
 .border-section {
     position: relative;
 }
@@ -34,9 +35,29 @@
     padding: 20px;
 }
 
-#about .container {
-    position: relative;
-    z-index: 1; /* Ensure content is above the border */
+#about {
+    padding-top: 100px;
 }
 
+#about .container {
+    position: relative;
+    z-index: 1;
+}
 
+/* tablet */
+@media (max-width:768px) {
+    .galleryWrap {
+        columns: 2;
+    }
+
+    #about {
+        padding-top: 150px;
+    }
+}
+
+/* phone */
+@media (max-width:450px) {
+    #about {
+        padding-top: 320px;
+    }
+}
