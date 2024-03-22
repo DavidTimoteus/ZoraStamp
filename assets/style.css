@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+* {
+    font-family: "Inter", sans-serif;
+    color: #454545;
+    a {
+        color: #454545;
+    }
+    a:hover {
+        color: black;
+    }
+}
+nav-link, .active {
+    color: red!important;
+    border-bottom: 2px solid red;
+    font-weight: bold;
+}
+.galleryWrap {
+    columns: 3;
+    column-gap: 15px;
+    padding: 20px 0;
+    margin: auto;
+}
+
+.galleryWrap .contentGallery {
+    width: 100%;
+    margin-bottom: 25px;
+    break-inside: avoid;
+    margin-left: 10px;
+    max-width: 100%;
+    border-radius: 15px;
+    transition: 0.7s;
+}
+
+.galleryWrap .contentGallery:hover {
+    transform: scale(0.9);
+    transition: 0.7s;
+    cursor: pointer;
+}
+.border-section {
+    position: relative;
+}
+
+.border-visi {
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.visi-content {
+    padding: 20px;
+}
+
+#about .container {
+    position: relative;
+    z-index: 1; /* Ensure content is above the border */
+}
+/* Home */
+.ss {
+    background-color: rebeccapurple;
+}
+.justify {
+    text-align: justify;
+}
+.text-gray {
+    color: #454545;
+}
+.text-logo {
+    color: #32498D;
+}
