@@ -12,6 +12,13 @@
         color: black;
     }
 }
+.nav-link {
+    color: black; /* Warna default */
+}
+
+.active {
+    color: red !important;
+}
 
 .bg-primary {
     background-color: #FBF8CD !important;
