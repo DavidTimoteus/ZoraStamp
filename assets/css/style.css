@@ -12,8 +12,10 @@
         color: black;
     }
 }
+
 .nav-link {
-    color: black; /* Warna default */
+    color: black;
+    /* Warna default */
 }
 
 .active {
@@ -146,7 +148,7 @@ nav-link,
     }
 
     #layanan {
-        margin-top: 320px !important;
+        margin-top: 200px !important;
     }
 
     #lokasi {
