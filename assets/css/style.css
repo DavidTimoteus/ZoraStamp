@@ -12,19 +12,38 @@
         color: black;
     }
 }
+
 .nav-link {
-    color: black; /* Warna default */
+    color: black;
+    /* Warna default */
 }
 
 .active {
     color: red !important;
+}
+
+.bg-primary {
+    background-color: #FBF8CD !important;
+}
+
+body {
+    background-color: #FBF8CD;
+    overflow-x: hidden;
 }
 
 nav-link,
 .active {
     color: red !important;
-    border-bottom: 2px solid red;
-    font-weight: bold;
+}
+
+nav-link,
+.active::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: red;
+    margin-left: 6px;
 }
 
 .galleryWrap {
@@ -98,14 +117,47 @@ nav-link,
     }
 
     #about {
-        padding-top: 150px;
+        padding-top: 180px !important;
+    }
+
+    #beranda {
+        padding-top: 180px !important;
+    }
+
+    #layanan {
+        margin-top: 180px !important;
+    }
+
+    #lokasi {
+        padding-top: 180px !important;
+    }
+
+    footer {
+        padding-top: 180px !important;
     }
 }
 
 /* phone */
 @media (max-width:450px) {
     #about {
-        padding-top: 320px;
+        padding-top: 320px !important;
+    }
+
+    #beranda {
+        padding-top: 320px !important;
+    }
+
+    #layanan {
+        margin-top: 200px !important;
+    }
+
+    #lokasi {
+        padding-top: 320px !important;
+    }
+
+    footer {
+        padding-top: 320px !important;
+
     }
 }
 
