@@ -11,7 +11,7 @@
     <!-- lib aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- css -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
@@ -19,8 +19,8 @@
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg border-bottom bg-primary fixed-top mb-5 py-3">
             <div class="container">
-                <a class="navbar-brand fw-bold text-logo" href="#">
-                    <img src="assets/img/logo.jpg" alt="logo" width="30" height="30" class="me-2 rounded-circle">
+                <a class="navbar-brand fw-bold" href="#"><img src="img/logo.jpg" alt="logo" width="30" height="30"
+                        class="me-2">
                     ZoraStamp</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -41,55 +41,44 @@
 
 
         <!-- beranda -->
-        <section class="w-100 d-flex flex-column flex-lg-row gap-3 justify-content-center align-items-center"
-            style="padding-top: 100px; height:80vh" id="beranda">
+        <section class="w-100 d-flex flex-column flex-lg-row gap-3 justify-content-center align-items-center" style="padding-top: 100px; height:80vh" id="beranda">
             <div class="w-lg-50 w-100 d-flex justify-content-center">
                 <img src="assets/img/image.png" width="500px">
             </div>
-            <div
-                class="w-lg-50 w-100 gap-4 d-flex flex-column text-center text-lg-start justify-content-center text-gray">
+            <div class="w-lg-50 w-100 gap-4 d-flex flex-column text-center text-lg-start justify-content-center text-gray">
                 <h1 class="text-capitalize fw-bolder">Jasa Percetakan Digital</h1>
-                <p class="justify fs-6">Dapatkan pengalaman cetak digital berkualitas tinggi dengan layanan profesional.
-                    Percetakan digital terpercaya yang menawarkan solusi cepat dan inovati untuk kebutuhan cetak. Dengan
-                    desain yang menarik dan teknologi canggih, memastikan setiap cetakan yang dihasilkan memenuhi
-                    standar kualitas tinggi.</p>
+                <p class="justify fs-6">Dapatkan pengalaman cetak digital berkualitas tinggi dengan layanan profesional. Percetakan digital terpercaya yang menawarkan solusi cepat dan inovati untuk kebutuhan cetak. Dengan desain yang menarik dan teknologi canggih, memastikan setiap cetakan yang dihasilkan memenuhi standar kualitas tinggi.</p>
             </div>
         </section>
         <!-- end -->
 
         <!-- layanan -->
-        <section class="d-flex justify-content-center pt-5" style="height: 100vh; padding-top: 120px !important;"
-            id="layanan">
+        <section class="d-flex justify-content-center pt-5" style="height: 100vh;" id="layanan">
             <h1 class="text-capitalize">layanan ZoraStamp</h1>
         </section>
         <!-- end -->
 
         <!-- galeri -->
         <section id="galeri">
-            <h2 class="text-center text-capitalize" style="padding-top: 100px;">gallery product
+            <h2 class="text-center text-capitalize" style="padding-top: 100px;">gallery <span
+                    class="fw-bold text-danger">product</span>
             </h2>
             <div class="galleryWrap">
-                <img src="assets/img/img1.jpg" alt="img" class="contentGallery" data-aos="zoom-in-up"
-                    data-aos-duration="1000">
-                <img src="assets/img/img2.jpg" alt="img" class="contentGallery" data-aos="zoom-in-up"
-                    data-aos-duration="1000">
-                <img src="assets/img/img2.jpg" alt="img" class="contentGallery" data-aos="zoom-in-up"
-                    data-aos-duration="1000">
-                <img src="assets/img/img2.jpg" alt="img" class="contentGallery" data-aos="zoom-in-up"
-                    data-aos-duration="1000">
-                <img src="assets/img/img4.jpg" alt="img" class="contentGallery" data-aos="zoom-in-up"
-                    data-aos-duration="1000">
-                <img src="assets/img/img4.jpg" alt="img" class="contentGallery" data-aos="zoom-in-up"
-                    data-aos-duration="1000">
-                <img src="assets/img/img3.jpg" alt="img" class="contentGallery" data-aos="zoom-in-up"
-                    data-aos-duration="1000">
+                <img src="assets/img/img1.jpg" alt="img" class="contentGallery" data-aos="zoom-in-up" data-aos-duration="1000"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="assets/img/img2.jpg" alt="img" class="contentGallery" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img src="assets/img/img2.jpg" alt="img" class="contentGallery" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img src="assets/img/img2.jpg" alt="img" class="contentGallery" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img src="assets/img/img4.jpg" alt="img" class="contentGallery" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img src="assets/img/img4.jpg" alt="img" class="contentGallery" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img src="assets/img/img3.jpg" alt="img" class="contentGallery" data-aos="zoom-in-up" data-aos-duration="1000">
             </div>
         </section>
         <!-- end -->
 
         <!-- tentang -->
         <section id="about" class="d-flex justify-content-center align-items-center border-section"
-            style="height: 100vh; padding-top: 100px;">
+            style="height: 100vh;">
             <div class="container">
                 <div class="text-center">
                     <h1 class="text-capitalize mb-4">Tentang Kami</h1>
@@ -130,16 +119,36 @@
         <!-- end -->
     </div>
 
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-between">
+                    <img src="assets/img/img1.jpg" alt="img" class="w-50" style="border-radius: 15px;">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatem aperiam nesciunt
+                        placeat eligendi sit consequatur, exercitationem nulla architecto similique error fugit
+                        maxime. Nesciunt tempore pariatur fugiat molestias, cumque tempora?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/index.js"></script>
     <script>
         AOS.init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
+    </script>
 </body>
-
 </html>
