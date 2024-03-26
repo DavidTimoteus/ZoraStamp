@@ -19,7 +19,7 @@
 }
 
 .active {
-    color: red !important;
+    color: #E02424 !important;
 }
 
 .bg-primary {
@@ -33,7 +33,7 @@ body {
 
 nav-link,
 .active {
-    color: red !important;
+    color: #E02424 !important;
 }
 
 nav-link,
@@ -42,8 +42,30 @@ nav-link,
     display: block;
     width: 50px;
     height: 2px;
-    background-color: red;
+    background-color: #E02424;
     margin-left: 6px;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    width: 0px;
+    height: 0px;
+    border-radius: 500%;
+    z-index: -1;
+    box-shadow: 0px 0px 400px 100px rgba(245, 0, 87, 0.5);
+}
+
+.card {
+    background-color: #FBF3D5;
+    border-radius: 5%;
+    border: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    padding: 5% 10% 0%;
 }
 
 .galleryWrap {
@@ -161,8 +183,78 @@ nav-link,
     }
 }
 
-.footer {
+.galleryWrap {
+    columns: 3;
+    column-gap: 15px;
+    padding: 20px 0;
+    margin: auto;
+}
+
+.galleryWrap .contentGallery {
     width: 100%;
+    margin-bottom: 25px;
+    break-inside: avoid;
+    margin-left: 10px;
+    max-width: 100%;
+    border-radius: 15px;
+    transition: 0.7s;
+}
+
+.galleryWrap .contentGallery:hover {
+    transform: scale(0.9);
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-left h4 {
+    color: #fff;
+}
+
+.footer-left p {
+    color: #ccc;
+}
+
+.footer-left h4,
+.footer-right h4 {
+    font-size: 20px;
+}
+
+
+.footer-right ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-right ul li {
+    margin-right: 15px;
+}
+
+
+.footer-right ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-right ul li a img {
+    width: 30px;
+}
+
+.footer-right ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-right ul li a:hover {
+    color: #fff;
 }
 
 .footer-bs {

@@ -1,154 +1,374 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Zora Stamp</title>
-    <link rel="icon" type="icon" href="assets/img/logo.jpg" class="rounded-circle">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      rel="icon"
+      type="icon"
+      href="assets/img/logo.png"
+      class="rounded-circle"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <!-- lib aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- css -->
-    <link rel="stylesheet" href="assets/style.css">
-</head>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-lg border-bottom bg-primary fixed-top mb-5 py-3">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="#"><img src="img/logo.jpg" alt="logo" width="30" height="30"
-                        class="me-2">
-                    ZoraStamp</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto">
-                        <a class="nav-link fw-bold active" aria-current="page" href="#beranda">Beranda</a>
-                        <a class="nav-link" href="#layanan">Layanan</a>
-                        <a class="nav-link" href="#galeri">Galeri Produk</a>
-                        <a class="nav-link" href="#about">Tentang Kami</a>
-                    </div>
-                </div>
+      <!-- navbar -->
+      <nav
+        class="navbar navbar-expand-lg border-bottom bg-primary fixed-top mb-5 py-3"
+      >
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#"
+            ><img
+              src="assets/img/logo.png"
+              alt="logo"
+              width="30"
+              height="30"
+              class="me-2"
+            />
+            ZoraStamp</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a
+                class="nav-link fw-bold active"
+                aria-current="page"
+                href="#beranda"
+                >Beranda</a
+              >
+              <a class="nav-link" href="#layanan">Layanan</a>
+              <a class="nav-link" href="#galeri">Galeri Produk</a>
+              <a class="nav-link" href="#about">Tentang Kami</a>
             </div>
-        </nav>
-        <!-- end -->
+          </div>
+        </div>
+      </nav>
+      <!-- end -->
 
+      <!-- Beranda -->
+      <header
+        class="w-100 d-flex flex-column flex-lg-row gap-3 justify-content-center align-items-center"
+        style="padding-top: 100px; height: 80vh"
+        id="beranda"
+      >
+        <div class="w-lg-50 w-100 d-flex justify-content-center">
+          <img src="assets/img/image.png" width="500px" />
+        </div>
+        <div
+          class="w-lg-50 w-100 gap-4 d-flex flex-column text-center text-lg-start justify-content-center text-gray"
+        >
+          <div class="circle"></div>
+          <h1 class="text-capitalize fw-bolder">Jasa Percetakan Digital</h1>
+          <p class="justify fs-6">
+            Dapatkan pengalaman cetak digital berkualitas tinggi dengan layanan
+            profesional. Percetakan digital terpercaya yang menawarkan solusi
+            cepat dan inovati untuk kebutuhan cetak. Dengan desain yang menarik
+            dan teknologi canggih, memastikan setiap cetakan yang dihasilkan
+            memenuhi standar kualitas tinggi.
+          </p>
+        </div>
+      </header>
+      <!-- end -->
 
-        <!-- beranda -->
-        <section class="w-100 d-flex flex-column flex-lg-row gap-3 justify-content-center align-items-center" style="padding-top: 100px; height:80vh" id="beranda">
-            <div class="w-lg-50 w-100 d-flex justify-content-center">
-                <img src="assets/img/image.png" width="500px">
+      <!-- layanan -->
+      <figure id="layanan">
+        <h1 class="text-center fw-bolder">
+          <span style="color: #e02424"> Layanan </span> <span> ZoraStamp </span>
+        </h1>
+        <div class="row g-5 mx-5 my-1">
+          <div class="col-6">
+            <div class="card text-center">
+              <div class="card-img">
+                <img src="assets/img/img-layanan.png" class="card-img-top" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-bold fs-3">Cetak Baliho / Benner</h5>
+                <p class="card-text px-5">
+                  Cetak banner dengan berbagai ukuran dan desain untuk promosi
+                  acara, bisnis, atau produk Anda.
+                </p>
+              </div>
             </div>
-            <div class="w-lg-50 w-100 gap-4 d-flex flex-column text-center text-lg-start justify-content-center text-gray">
-                <h1 class="text-capitalize fw-bolder">Jasa Percetakan Digital</h1>
-                <p class="justify fs-6">Dapatkan pengalaman cetak digital berkualitas tinggi dengan layanan profesional. Percetakan digital terpercaya yang menawarkan solusi cepat dan inovati untuk kebutuhan cetak. Dengan desain yang menarik dan teknologi canggih, memastikan setiap cetakan yang dihasilkan memenuhi standar kualitas tinggi.</p>
+          </div>
+          <div class="col-6">
+            <div class="card text-center">
+              <div class="card-img">
+                <img src="assets/img/img-layanan.png" class="card-img-top" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-bold fs-3">Cetak Striker</h5>
+                <p class="card-text px-5">
+                  Cetak stiker berkualitas tinggi dengan desain yang menarik
+                  untuk branding atau promosi Anda.
+                </p>
+              </div>
             </div>
-        </section>
-        <!-- end -->
-
-        <!-- layanan -->
-        <section class="d-flex justify-content-center pt-5" style="height: 100vh;" id="layanan">
-            <h1 class="text-capitalize">layanan ZoraStamp</h1>
-        </section>
-        <!-- end -->
-
-        <!-- galeri -->
-        <section id="galeri">
-            <h2 class="text-center text-capitalize" style="padding-top: 100px;">gallery <span
-                    class="fw-bold text-danger">product</span>
-            </h2>
-            <div class="galleryWrap">
-                <img src="assets/img/img1.jpg" alt="img" class="contentGallery" data-aos="zoom-in-up" data-aos-duration="1000"
-                    data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <img src="assets/img/img2.jpg" alt="img" class="contentGallery" data-aos="zoom-in-up" data-aos-duration="1000">
-                <img src="assets/img/img2.jpg" alt="img" class="contentGallery" data-aos="zoom-in-up" data-aos-duration="1000">
-                <img src="assets/img/img2.jpg" alt="img" class="contentGallery" data-aos="zoom-in-up" data-aos-duration="1000">
-                <img src="assets/img/img4.jpg" alt="img" class="contentGallery" data-aos="zoom-in-up" data-aos-duration="1000">
-                <img src="assets/img/img4.jpg" alt="img" class="contentGallery" data-aos="zoom-in-up" data-aos-duration="1000">
-                <img src="assets/img/img3.jpg" alt="img" class="contentGallery" data-aos="zoom-in-up" data-aos-duration="1000">
+          </div>
+          <div class="col-6">
+            <div class="card text-center">
+              <div class="card-img">
+                <img src="assets/img/img-layanan.png" class="card-img-top" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-bold fs-3">Pembuatan Stempel</h5>
+                <p class="card-text px-5">
+                  Kami juga menyediakan layanan pembuatan stempel dengan
+                  berbagai pilihan jenis dan desain.
+                </p>
+              </div>
             </div>
-        </section>
-        <!-- end -->
-
-        <!-- tentang -->
-        <section id="about" class="d-flex justify-content-center align-items-center border-section"
-            style="height: 100vh;">
-            <div class="container">
-                <div class="text-center">
-                    <h1 class="text-capitalize mb-4">Tentang Kami</h1>
-                </div>
-                <div class="border border-visi">
-                    <div class="visi-content">
-                        <h3 class="text-center text-capitalize mb-4">Visi</h3>
-                        <p class="h5 text-center" style="font-weight: normal;">Memberikan produk digital printing
-                            berkualitas dengan biaya semurah mungkin. Kami percaya bahwa kualitas tidak harus mahal, dan
-                            kami berkomitmen untuk memberikan layanan yang terjangkau tanpa mengorbankan kualitas.</p>
-                    </div>
-                    <div class="visi-content">
-                        <h3 class="text-center text-capitalize mb-4">Misi</h3>
-                        <p class="h5 text-center" style="font-weight: normal;">Memberikan produk digital printing
-                            berkualitas dengan biaya semurah mungkin. Kami percaya bahwa kualitas tidak harus mahal, dan
-                            kami berkomitmen untuk memberikan layanan yang terjangkau tanpa mengorbankan kualitas.</p>
-                    </div>
-                </div>
+          </div>
+          <div class="col-6">
+            <div class="card text-center">
+              <div class="card-img">
+                <img src="assets/img/img-layanan.png" class="card-img-top" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-bold fs-3">Desain Grafis</h5>
+                <p class="card-text px-5">
+                  Tim desain grafis kami siap membantu Anda dalam menciptakan
+                  identitas visual yang kuat untuk bisnis Anda.
+                </p>
+              </div>
             </div>
-        </section>
-        <!-- end -->
+          </div>
+        </div>
+      </figure>
+      <!-- end -->
 
-        <section class="d-flex flex-column justify-content-center align-items-center"
-            style="height: 100vh; padding-top: 100px;" id="lokasi">
-            <h1 class="text-capitalize mb-4">lokasi</h1>
-            <div class="container">
-                <!-- Embed Google Maps -->
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.280380545926!2d110.50324601071975!3d-7.322370271976733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a791eea650a7b%3A0xa48e44ca27450c1b!2sGamelab%20Indonesia!5e0!3m2!1sen!2sid!4v1711084737592!5m2!1sen!2sid"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <!-- galeri -->
+      <section id="galeri">
+        <h2 class="text-center text-capitalize" style="padding-top: 100px">
+          gallery <span class="fw-bold text-danger">product</span>
+        </h2>
+        <div class="galleryWrap">
+          <img
+            src="assets/img/img1.jpg"
+            alt="img"
+            class="contentGallery"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          />
+          <img
+            src="assets/img/img2.jpg"
+            alt="img"
+            class="contentGallery"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+          />
+          <img
+            src="assets/img/img2.jpg"
+            alt="img"
+            class="contentGallery"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+          />
+          <img
+            src="assets/img/img2.jpg"
+            alt="img"
+            class="contentGallery"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+          />
+          <img
+            src="assets/img/img4.jpg"
+            alt="img"
+            class="contentGallery"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+          />
+          <img
+            src="assets/img/img4.jpg"
+            alt="img"
+            class="contentGallery"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+          />
+          <img
+            src="assets/img/img3.jpg"
+            alt="img"
+            class="contentGallery"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+          />
+        </div>
+      </section>
+      <!-- end -->
+
+      <!-- tentang -->
+      <section
+        id="about"
+        class="d-flex justify-content-center align-items-center border-section"
+        style="height: 100vh"
+      >
+        <div class="container">
+          <div class="text-center">
+            <h1 class="text-capitalize mb-4">Tentang Kami</h1>
+          </div>
+          <div class="border border-visi">
+            <div class="visi-content">
+              <h3 class="text-center text-capitalize mb-4">Visi</h3>
+              <p class="h5 text-center" style="font-weight: normal">
+                Memberikan produk digital printing berkualitas dengan biaya
+                semurah mungkin. Kami percaya bahwa kualitas tidak harus mahal,
+                dan kami berkomitmen untuk memberikan layanan yang terjangkau
+                tanpa mengorbankan kualitas.
+              </p>
             </div>
-        </section>
+            <div class="visi-content">
+              <h3 class="text-center text-capitalize mb-4">Misi</h3>
+              <p class="h5 text-center" style="font-weight: normal">
+                Memberikan produk digital printing berkualitas dengan biaya
+                semurah mungkin. Kami percaya bahwa kualitas tidak harus mahal,
+                dan kami berkomitmen untuk memberikan layanan yang terjangkau
+                tanpa mengorbankan kualitas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end -->
 
-        <!-- footer -->
-        <footer>
-            <p>footer</p>
-        </footer>
-        <!-- end -->
+      <section
+        class="d-flex flex-column justify-content-center align-items-center"
+        style="height: 100vh; padding-top: 100px"
+        id="lokasi"
+      >
+        <h1 class="text-capitalize mb-4">lokasi</h1>
+        <div class="container">
+          <!-- Embed Google Maps -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.280380545926!2d110.50324601071975!3d-7.322370271976733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a791eea650a7b%3A0xa48e44ca27450c1b!2sGamelab%20Indonesia!5e0!3m2!1sen!2sid!4v1711084737592!5m2!1sen!2sid"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
     </div>
-
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-left">
+          <h4>ZoraStamp</h4>
+          <p>
+            Jl. Imam Bonjol, Bansir Lut, Kec.Pontianak Tenggara, Kota Pontianak,
+            Kalimantan Barat 78243
+          </p>
+        </div>
+        <div class="footer-right">
+          <h4>Hubungi Kami</h4>
+          <ul>
+            <li>
+              <a href="https://wa.me/1234567890"
+                ><img src="img/whatsapp-logo.png" alt="WA Logo" /> WhatsApp</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@example.com"
+                ><img src="img/gmail-logo.png" alt="Email Logo" /> Email</a
+              >
+            </li>
+            <li>
+              <a href="https://instagram.com/example"
+                ><img src="img/instagram-logo.png" alt="Instagram Logo" />
+                Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://facebook.com/example"
+                ><img src="img/facebook-logo.png" alt="Facebook Logo" />
+                Facebook</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- end -->
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body d-flex justify-content-between">
-                    <img src="assets/img/img1.jpg" alt="img" class="w-50" style="border-radius: 15px;">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatem aperiam nesciunt
-                        placeat eligendi sit consequatur, exercitationem nulla architecto similique error fugit
-                        maxime. Nesciunt tempore pariatur fugiat molestias, cumque tempora?</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex justify-content-between">
+            <img
+              src="assets/img/img1.jpg"
+              alt="img"
+              class="w-50"
+              style="border-radius: 15px"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              voluptatem aperiam nesciunt placeat eligendi sit consequatur,
+              exercitationem nulla architecto similique error fugit maxime.
+              Nesciunt tempore pariatur fugiat molestias, cumque tempora?
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
         </div>
+      </div>
     </div>
     <!-- modal -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
