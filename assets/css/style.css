@@ -2,7 +2,6 @@
 
 * {
     font-family: "Inter", sans-serif;
-    color: #454545;
 
     a {
         color: #454545;
@@ -54,7 +53,7 @@ nav-link,
     height: 0px;
     border-radius: 500%;
     z-index: -1;
-    box-shadow: 0px 0px 400px 100px rgba(245, 0, 87, 0.5);
+    box-shadow: 50px 80px 500px 100px rgba(245, 0, 87, 0.5);
 }
 
 .card {
@@ -66,6 +65,16 @@ nav-link,
 
 .card-img {
     padding: 5% 10% 0%;
+}
+
+.carousel-inner {
+    border-radius: 30px;
+}
+
+.carousel-item img,
+.row.carousel {
+    border-radius: 30px;
+    height: 70vh;
 }
 
 .galleryWrap {
@@ -91,15 +100,43 @@ nav-link,
     cursor: pointer;
 }
 
+#aboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#contactUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
 .border-section {
     position: relative;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .border-visi {
+    margin-top: 20px;
     border: 2px solid #000;
     border-radius: 15px;
     padding: 20px;
     background-color: #FBF3D5;
+}
+
+.form-control {
+    border: 2px solid #E02424;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .visi-content {
