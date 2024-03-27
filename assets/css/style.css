@@ -135,7 +135,7 @@ nav-link,
 
 /* tablet */
 @media (max-width:768px) {
-    .galleryWrap {
+    #gallery .galleryWrap {
         columns: 2;
     }
 
