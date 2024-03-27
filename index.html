@@ -157,77 +157,97 @@
         </div>
       </figure>
       <!-- galeri -->
-      <figure id="gallery" style="padding-top: 100px; height: 200vh">
+      <figure id="gallery" style="padding-top: 100px; height: 100vh">
         <h1 class="text-center fw-bolder">
           <span> Galeri </span> <span style="color: #e02424"> Produk </span>
         </h1>
-        <div class="galleryWrap">
-          <img
-            src="assets/img/img1.jpg"
-            alt="img"
-            class="contentGallery"
-            data-aos="zoom-in-up"
-            data-aos-duration="1000"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          />
-          <img
-            src="assets/img/img2.jpg"
-            alt="img"
-            class="contentGallery"
-            data-aos="zoom-in-up"
-            data-aos-duration="1000"
-          />
-          <img
-            src="assets/img/img2.jpg"
-            alt="img"
-            class="contentGallery"
-            data-aos="zoom-in-up"
-            data-aos-duration="1000"
-          />
-          <img
-            src="assets/img/img2.jpg"
-            alt="img"
-            class="contentGallery"
-            data-aos="zoom-in-up"
-            data-aos-duration="1000"
-          />
-          <img
-            src="assets/img/img4.jpg"
-            alt="img"
-            class="contentGallery"
-            data-aos="zoom-in-up"
-            data-aos-duration="1000"
-          />
-          <img
-            src="assets/img/img4.jpg"
-            alt="img"
-            class="contentGallery"
-            data-aos="zoom-in-up"
-            data-aos-duration="1000"
-          />
-          <img
-            src="assets/img/img3.jpg"
-            alt="img"
-            class="contentGallery"
-            data-aos="zoom-in-up"
-            data-aos-duration="1000"
-          />
+        <div
+          id="carouselAutoplayingRow1"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          style="padding-top: 2vh"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row carousel">
+                <div class="col-4">
+                  <img
+                    src="assets/img/img1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="assets/img/img4.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="assets/img/img3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row carousel">
+                <div class="col-4">
+                  <img
+                    src="assets/img/img1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="assets/img/img4.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="assets/img/img3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselAutoplayingRow1"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselAutoplayingRow1"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </figure>
     </section>
     <article class="container">
       <!-- tentang -->
-      <div
-        id="aboutUs"
-        class="d-flex justify-content-center align-items-center border-section"
-        style="height: 100vh"
-      >
-        <div class="container">
-          <h1 class="text-center fw-bolder">
-            <span style="color: #e02424"> Tentang </span> <span> Kami </span>
+      <div id="aboutUs" class="border-section">
+        <div class="row">
+          <h1 class="text-center fw-bolder mt-5">
+            <span style="color: #e02424">Tentang</span> <span>Kami</span>
           </h1>
-          <div class="border border-visi">
+          <div class="border border-visi mt-5">
             <div class="visi-content">
               <h3 class="text-center text-capitalize mb-4">Visi</h3>
               <p class="h5 text-center" style="font-weight: normal">
@@ -249,8 +269,8 @@
           </div>
         </div>
       </div>
-      <div class="form row g-5 mx-5" id="contactUs">
-        <h1 class="text-center fw-bolder">
+      <div class="form row mx-5" id="contactUs">
+        <h1 class="text-center fw-bolder mt-5">
           <span> Hubungi </span> <span style="color: #e02424"> Kami </span>
         </h1>
         <form class="row g-2">
@@ -291,19 +311,22 @@
       </div>
       <figure
         class="d-flex flex-column justify-content-center align-items-center"
-        style="height: 100vh; padding-top: 100px"
+        style="height: 100vh"
         id="lokasi"
       >
-        <h1 class="text-capitalize mb-4">lokasi</h1>
+        <h1 class="text-center fw-bolder">
+          <span style="color: #e02424"> Lokasi </span> <span> ZoraStamp </span>
+        </h1>
         <div class="container">
           <!-- Embed Google Maps -->
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.280380545926!2d110.50324601071975!3d-7.322370271976733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a791eea650a7b%3A0xa48e44ca27450c1b!2sGamelab%20Indonesia!5e0!3m2!1sen!2sid!4v1711084737592!5m2!1sen!2sid"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498.7271299035426!2d109.35326835547973!3d-0.045915054830945434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d59b8646378c1%3A0x74ac026e3c736e9e!2sKaos%20Original%203D%20Fullprint%2C%20Made%20In%20Thailand%20Style!5e0!3m2!1sen!2sid!4v1711507780743!5m2!1sen!2sid"
             width="100%"
             height="450"
-            style="border: 0"
+            style="border: 0; border-radius: 20px"
             allowfullscreen=""
             loading="lazy"
+            class="mt-5"
           ></iframe>
         </div>
       </figure>
@@ -357,40 +380,41 @@
     </article>
     <footer>
       <div class="container">
-        <div class="footer-left">
-          <h4>ZoraStamp</h4>
-          <p>
-            Jl. Imam Bonjol, Bansir Lut, Kec.Pontianak Tenggara, Kota Pontianak,
-            Kalimantan Barat 78243
-          </p>
-        </div>
-        <div class="footer-right">
-          <h4>Hubungi Kami</h4>
-          <ul>
-            <li>
-              <a href="https://wa.me/1234567890"
-                ><img src="img/whatsapp-logo.png" alt="WA Logo" /> WhatsApp</a
-              >
-            </li>
-            <li>
-              <a href="mailto:info@example.com"
-                ><img src="img/gmail-logo.png" alt="Email Logo" /> Email</a
-              >
-            </li>
-            <li>
-              <a href="https://instagram.com/example"
-                ><img src="img/instagram-logo.png" alt="Instagram Logo" />
-                Instagram</a
-              >
-            </li>
-            <li>
-              <i class="bi bi-facebook"></i>
-              <a href="https://facebook.com/example"
-                ><img src="img/facebook-logo.png" alt="Facebook Logo" />
-                Facebook</a
-              >
-            </li>
-          </ul>
+        <div class="row">
+          <div class="footer-left col-6">
+            <h4 class="text-center fw-bolder">ZoraStamp</h4>
+            <p>
+              Jl. Imam Bonjol, Bansir Lut, Kec.Pontianak Tenggara, Kota
+              Pontianak, Kalimantan Barat 78243
+            </p>
+          </div>
+          <div class="footer-right col-6">
+            <h4 class="text-center fw-bolder">Hubungi Kami</h4>
+            <ul>
+              <li>
+                <a href="https://wa.me/1234567890"
+                  ><i class="bi bi-whatsapp"></i><br />0812345678</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@example.com"
+                  ><i class="bi bi-envelope-at-fill"></i
+                  ><br />ZoraStamp@Gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="https://instagram.com/example"
+                  ><i class="bi bi-instagram"></i><br />ZoraStamp</a
+                >
+              </li>
+              <li>
+                <a href="https://facebook.com/example"
+                  ><i class="bi bi-facebook"></i> <br />
+                  ZoraPrinting</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
