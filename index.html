@@ -25,8 +25,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- sass -->
+    <link rel="stylesheet" href="assets/sass/styleSass.css" />
   </head>
-
   <body>
     <!-- navbar -->
     <nav
@@ -81,7 +82,9 @@
           class="w-lg-50 w-100 gap-4 d-flex flex-column text-center text-lg-start justify-content-center text-gray"
         >
           <div class="circle"></div>
-          <h1 class="text-capitalize fw-bolder">Jasa Percetakan Digital</h1>
+          <h1 class="text-capitalize fw-bolder" id="text-header">
+            Jasa Percetakan Digital
+          </h1>
           <p class="justify fs-6">
             Dapatkan pengalaman cetak digital berkualitas tinggi dengan layanan
             profesional. Percetakan digital terpercaya yang menawarkan solusi
@@ -99,7 +102,7 @@
         </h1>
         <div class="row g-5 mx-5 my-1">
           <div class="col-6">
-            <div class="card text-center">
+            <div class="card text-center" data-aos="zoom-in">
               <div class="card-img">
                 <img src="assets/img/img-layanan.png" class="card-img-top" />
               </div>
@@ -113,7 +116,7 @@
             </div>
           </div>
           <div class="col-6">
-            <div class="card text-center">
+            <div class="card text-center" data-aos="zoom-in">
               <div class="card-img">
                 <img src="assets/img/img-layanan.png" class="card-img-top" />
               </div>
@@ -127,7 +130,7 @@
             </div>
           </div>
           <div class="col-6">
-            <div class="card text-center">
+            <div class="card text-center" data-aos="zoom-in">
               <div class="card-img">
                 <img src="assets/img/img-layanan.png" class="card-img-top" />
               </div>
@@ -141,7 +144,7 @@
             </div>
           </div>
           <div class="col-6">
-            <div class="card text-center">
+            <div class="card text-center" data-aos="zoom-in">
               <div class="card-img">
                 <img src="assets/img/img-layanan.png" class="card-img-top" />
               </div>
@@ -166,6 +169,7 @@
           class="carousel slide"
           data-bs-ride="carousel"
           style="padding-top: 2vh"
+          data-aos="fade-up"
         >
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -317,10 +321,10 @@
         <h1 class="text-center fw-bolder">
           <span style="color: #e02424"> Lokasi </span> <span> ZoraStamp </span>
         </h1>
-        <div class="container">
+        <div class="container" data-aos="zoom-in-up" s>
           <!-- Embed Google Maps -->
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498.7271299035426!2d109.35326835547973!3d-0.045915054830945434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d59b8646378c1%3A0x74ac026e3c736e9e!2sKaos%20Original%203D%20Fullprint%2C%20Made%20In%20Thailand%20Style!5e0!3m2!1sen!2sid!4v1711507780743!5m2!1sen!2sid"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.36356679289636!2d109.35347632776562!3d-0.04538409862832799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d59b71db464dd%3A0xe587395048c9c5fa!2sJl.%20Imam%20Bonjol%2C%20Bansir%20Laut%2C%20Kec.%20Pontianak%20Tenggara%2C%20Kota%20Pontianak%2C%20Kalimantan%20Barat!5e0!3m2!1sen!2sid!4v1711595069742!5m2!1sen!2sid"
             width="100%"
             height="450"
             style="border: 0; border-radius: 20px"
@@ -382,9 +386,9 @@
       <div class="container">
         <div class="row">
           <div class="footer-left col-6">
-            <h4 class="text-center fw-bolder">ZoraStamp</h4>
+            <h4 class="text-center fw-bolder">Alamat ZoraStamp</h4>
             <p>
-              Jl. Imam Bonjol, Bansir Lut, Kec.Pontianak Tenggara, Kota
+              Jl. Imam Bonjol, Bansir Laut, Kec.Pontianak Tenggara, Kota
               Pontianak, Kalimantan Barat 78243
             </p>
           </div>
@@ -428,5 +432,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- JS -->
+    <script src="assets/js/index.js"></script>
   </body>
 </html>

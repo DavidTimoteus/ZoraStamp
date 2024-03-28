@@ -1,0 +1,16 @@
+.card {
+  background-color: #FBF8CD;
+  border-radius: 5%;
+  border: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+  padding: 5% 10% 0%;
+}
+
+.carousel-inner,
+.carousel-item img,
+.row.carousel {
+  border-radius: 30px;
+}
