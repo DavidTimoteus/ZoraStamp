@@ -111,7 +111,6 @@ body {
 #about .container {
     position: relative;
     z-index: 1;
-    /* Ensure content is above the border */
 }
 
 /* Home */
@@ -133,57 +132,6 @@ body {
 
 #about {
     padding-top: 100px;
-}
-
-/* tablet */
-@media (max-width:768px) {
-    .galleryWrap {
-        columns: 2;
-    }
-
-    #about {
-        padding-top: 180px !important;
-    }
-
-    #beranda {
-        padding-top: 180px !important;
-    }
-
-    #layanan {
-        margin-top: 180px !important;
-    }
-
-    #lokasi {
-        padding-top: 180px !important;
-    }
-
-    footer {
-        padding-top: 180px !important;
-    }
-}
-
-/* phone */
-@media (max-width:450px) {
-    #about {
-        padding-top: 320px !important;
-    }
-
-    #beranda {
-        padding-top: 320px !important;
-    }
-
-    #layanan {
-        margin-top: 200px !important;
-    }
-
-    #lokasi {
-        padding-top: 320px !important;
-    }
-
-    footer {
-        padding-top: 320px !important;
-
-    }
 }
 
 .galleryWrap {
@@ -270,10 +218,63 @@ footer {
 .footer-bs .footer-brand h2 {
     margin: 0;
     font-size: 24px;
-    /* Adjust font size as needed */
 }
 
 .footer-bs .footer-brand img {
     margin-right: 10px;
-    /* Adjust margin between logo and text */
+}
+
+/* tablet */
+@media (max-width:768px) {
+    .galleryWrap {
+        columns: 2;
+    }
+
+    #about {
+        padding-top: 180px !important;
+    }
+
+    #beranda {
+        padding-top: 180px !important;
+    }
+
+    #layanan {
+        margin-top: 180px !important;
+    }
+
+    #lokasi {
+        padding-top: 180px !important;
+    }
+
+    footer {
+        padding-top: 180px !important;
+    }
+}
+
+/* phone */
+@media (max-width:450px) {
+    #about {
+        padding-top: 320px !important;
+    }
+
+    #beranda {
+        padding-top: 320px !important;
+    }
+
+    #layanan {
+        margin-top: 200px !important;
+    }
+
+    #lokasi {
+        padding-top: 320px !important;
+    }
+
+    footer {
+        padding-top: 320px !important;
+
+    }
+
+    .footer-right ul li {
+        display: block;
+    }
 }
