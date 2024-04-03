@@ -1,1 +1,1 @@
-
+gambar di card sama bisa cari di google biar beda, kalo responsive cardnya ada yg ga rapi, tambah placeholder di input text nama (nama depan saya / contoh ) tag navbar yg aktif tidak mengikuti kalau pagenya di scroll
