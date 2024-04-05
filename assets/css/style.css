@@ -26,6 +26,20 @@ body {
     color: #E02424 !important;
 }
 
+.container {
+    text-align: center;
+}
+
+/* Beranda */
+#home {
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+.img-fluid {
+    width: 500px;
+}
+
 .circle {
     position: absolute;
     top: 50%;
@@ -34,7 +48,40 @@ body {
     height: 0px;
     border-radius: 500%;
     z-index: -1;
-    box-shadow: 50px 80px 500px 100px rgba(245, 0, 87, 0.5);
+    box-shadow: 30px 80px 300px 120px rgba(245, 0, 87, 0.5);
+}
+
+/* Layanan */
+#service {
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    flex-grow: 0;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Galeri */
+#gallery {
+    padding-top: 100px;
+    min-height: 100vh;
 }
 
 .carousel-item img,
@@ -42,52 +89,22 @@ body {
     height: 70vh;
 }
 
-.galleryWrap {
-    columns: 3;
-    column-gap: 15px;
-    padding: 20px 0;
-    margin: auto;
-}
-
-.galleryWrap .contentGallery {
-    width: 100%;
-    margin-bottom: 25px;
-    break-inside: avoid;
-    margin-left: 10px;
-    max-width: 100%;
-    border-radius: 15px;
-    transition: 0.7s;
-}
-
-.galleryWrap .contentGallery:hover {
-    transform: scale(0.9);
-    transition: 0.7s;
-    cursor: pointer;
-}
-
+/* Tentang Kami */
 #aboutUs {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
+/* Hubungi Kami */
 #contactUs {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-.container {
-    text-align: center;
-}
-
-.border-section {
-    position: relative;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
+    min-height: 100vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .border-visi {
@@ -104,7 +121,8 @@ body {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.visi-content {
+.visi-content,
+.misi-content {
     padding: 20px;
 }
 
@@ -135,86 +153,11 @@ body {
     padding-top: 100px;
 }
 
-/* tablet */
-@media (max-width:768px) {
-    .galleryWrap {
-        columns: 2;
-    }
-
-    #about {
-        padding-top: 180px !important;
-    }
-
-    #beranda {
-        padding-top: 180px !important;
-    }
-
-    #layanan {
-        margin-top: 180px !important;
-    }
-
-    #lokasi {
-        padding-top: 180px !important;
-    }
-
-    footer {
-        padding-top: 180px !important;
-    }
-}
-
-/* phone */
-@media (max-width:450px) {
-    #about {
-        padding-top: 320px !important;
-    }
-
-    #beranda {
-        padding-top: 320px !important;
-    }
-
-    #layanan {
-        margin-top: 200px !important;
-    }
-
-    #lokasi {
-        padding-top: 320px !important;
-    }
-
-    footer {
-        padding-top: 320px !important;
-
-    }
-}
-
-.galleryWrap {
-    columns: 3;
-    column-gap: 15px;
-    padding: 20px 0;
-    margin: auto;
-}
-
-.galleryWrap .contentGallery {
-    width: 100%;
-    margin-bottom: 25px;
-    break-inside: avoid;
-    margin-left: 10px;
-    max-width: 100%;
-    border-radius: 15px;
-    transition: 0.7s;
-}
-
-.galleryWrap .contentGallery:hover {
-    transform: scale(0.9);
-    transition: 0.7s;
-    cursor: pointer;
-}
-
 footer {
     background-color: #222;
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    font-size: 14px;
 }
 
 .footer-left h4 {
@@ -224,12 +167,6 @@ footer {
 .footer-left p {
     color: #ccc;
 }
-
-.footer-left h4,
-.footer-right h4 {
-    font-size: 20px;
-}
-
 
 .footer-right ul {
     display: flex;
@@ -269,11 +206,139 @@ footer {
 
 .footer-bs .footer-brand h2 {
     margin: 0;
-    font-size: 24px;
-    /* Adjust font size as needed */
 }
 
 .footer-bs .footer-brand img {
     margin-right: 10px;
     /* Adjust margin between logo and text */
+}
+
+
+@media (max-width: 991.98px) {
+
+    /* Header */
+    .circle {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        width: 0px;
+        height: 0px;
+        border-radius: 500%;
+        z-index: -1;
+        box-shadow: 20px 60px 250px 130px rgba(245, 0, 87, 0.5);
+    }
+
+    /* Layanan */
+    #service {
+        min-height: 100vh;
+    }
+
+    /* Galeri */
+    #gallery {
+        min-height: 100vh;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next,
+    .carousel-inner {
+        padding-top: 10vh;
+    }
+
+    .carousel-item img,
+    .row.carousel {
+        height: 50vh;
+        width: auto;
+    }
+
+}
+
+
+@media (max-width: 767.98px) {
+
+    /* Header */
+    .circle {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        width: 0px;
+        height: 0px;
+        border-radius: 500%;
+        z-index: -1;
+        box-shadow: 10px 10px 250px 100px rgba(245, 0, 87, 0.5);
+    }
+
+    /* Layanan */
+    .col-12 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 70%;
+    }
+    .card-body{
+        padding: 0px;
+    }
+
+    /* Galeri */
+    #gallery {
+        min-height: 100vh;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next,
+    .carousel-inner {
+        padding-top: 10vh;
+    }
+
+    .carousel-item img,
+    .row.carousel {
+        height: 50vh;
+        width: auto;
+    }
+
+}
+
+@media (max-width:575.98px) {
+
+    /* Header */
+    .circle {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        width: 0px;
+        height: 0px;
+        border-radius: 500%;
+        z-index: -1;
+        box-shadow: 10px 10px 250px 100px rgba(245, 0, 87, 0.5);
+    }
+
+    .img-fluid {
+        width: 80%;
+    }
+
+    /* Layanan */
+    #service {
+        min-height: 100vh;
+    }
+
+    /* Galeri */
+    #gallery {
+        min-height: 100vh;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next,
+    .carousel-inner {
+        padding-top: 10vh;  
+    }
+
+    .carousel-item img,
+    .row.carousel {
+        padding-left: 5vh;
+        padding-right: 5vh;
+        height: 60vh;
+        width: auto;
+    }
 }

@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
     <title>Zora Stamp</title>
     <link
       rel="icon"
@@ -27,12 +30,11 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- sass -->
     <link rel="stylesheet" href="assets/sass/styleSass.css" />
+    <link rel="stylesheet" href="css/styleSass.min.css" />
   </head>
   <body>
     <!-- navbar -->
-    <nav
-      class="navbar navbar-expand-lg border-bottom bg-primary fixed-top mb-5 py-3"
-    >
+    <nav class="navbar navbar-expand-lg bg-primary fixed-top mb-5 py-3">
       <div class="container">
         <a class="navbar-brand fw-bold" href="#"
           ><img
@@ -72,20 +74,22 @@
       <!-- Beranda -->
       <header
         class="w-100 d-flex flex-column flex-lg-row gap-3 justify-content-center align-items-center"
-        style="padding-top: 100px; height: 100vh"
         id="home"
       >
-        <div class="w-lg-50 w-100 d-flex justify-content-center">
-          <img src="assets/img/image.png" width="500px" />
+        <div class="w-100 d-flex justify-content-center">
+          <img class="img-fluid" src="assets/img/image.png" />
         </div>
         <div
-          class="w-lg-50 w-100 gap-4 d-flex flex-column text-center text-lg-start justify-content-center text-gray"
+          class="w-100 gap-lg-4 gap-md-2 d-flex flex-column text-center text-lg-start justify-content-center text-gray"
         >
           <div class="circle"></div>
-          <h1 class="text-capitalize fw-bolder" id="text-header">
+          <h1
+            class="text-capitalize fw-bolder fs-xs-2 fs-sm-2 fs-md-2"
+            id="text-header"
+          >
             Jasa Percetakan Digital
           </h1>
-          <p class="justify fs-6">
+          <p class="justify fs-xs-1 fs-sm-1 fs-md-1">
             Dapatkan pengalaman cetak digital berkualitas tinggi dengan layanan
             profesional. Percetakan digital terpercaya yang menawarkan solusi
             cepat dan inovati untuk kebutuhan cetak. Dengan desain yang menarik
@@ -95,62 +99,70 @@
         </div>
       </header>
       <!-- layanan -->
-      <figure id="service" style="padding-top: 100px; height: 200vh">
-        <h1 class="text-center fw-bolder">
+      <figure id="service">
+        <h1 class="text-center fw-bolder fs-xs-2 fs-sm-2 fs-md-2">
           <span style="color: #e02424"> Layanan </span>
           <span> ZoraStamp </span>
         </h1>
-        <div class="row g-5 mx-5 my-1">
-          <div class="col-6">
+        <div class="row g-4 mx-md-1 my-1">
+          <div class="col-lg-3 col-md-6 col-12">
             <div class="card text-center" data-aos="zoom-in">
               <div class="card-img">
                 <img src="assets/img/img-layanan.png" class="card-img-top" />
               </div>
               <div class="card-body">
-                <h5 class="card-title fw-bold fs-3">Cetak Baliho / Benner</h5>
-                <p class="card-text px-5">
+                <h5 class="card-title fw-bold fs-xs-2 fs-sm-2">
+                  Cetak Baliho / Benner
+                </h5>
+                <p class="card-text px-3 fs-xs-1 fs-sm-1 fs-md-1">
                   Cetak banner dengan berbagai ukuran dan desain untuk promosi
                   acara, bisnis, atau produk Anda.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-lg-3 col-md-6 col-12">
             <div class="card text-center" data-aos="zoom-in">
               <div class="card-img">
                 <img src="assets/img/img-layanan.png" class="card-img-top" />
               </div>
               <div class="card-body">
-                <h5 class="card-title fw-bold fs-3">Cetak Striker</h5>
-                <p class="card-text px-5">
+                <h5 class="card-title fw-bold fs-xs-2 fs-sm-2">
+                  Cetak Striker
+                </h5>
+                <p class="card-text px-3 fs-xs-1 fs-sm-1 fs-md-1">
                   Cetak stiker berkualitas tinggi dengan desain yang menarik
                   untuk branding atau promosi Anda.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-6">
-            <div class="card text-center" data-aos="zoom-in">
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="card" data-aos="zoom-in">
               <div class="card-img">
                 <img src="assets/img/img-layanan.png" class="card-img-top" />
               </div>
               <div class="card-body">
-                <h5 class="card-title fw-bold fs-3">Pembuatan Stempel</h5>
-                <p class="card-text px-5">
+                <h5 class="card-title fw-bold fs-xs-2 fs-sm-2">
+                  Pembuatan Stempel
+                </h5>
+                <p class="card-text px-3 fs-xs-1 fs-sm-1 fs-md-1">
                   Kami juga menyediakan layanan pembuatan stempel dengan
                   berbagai pilihan jenis dan desain.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-lg-3 col-md-6 col-12">
             <div class="card text-center" data-aos="zoom-in">
               <div class="card-img">
                 <img src="assets/img/img-layanan.png" class="card-img-top" />
               </div>
               <div class="card-body">
-                <h5 class="card-title fw-bold fs-3">Desain Grafis</h5>
-                <p class="card-text px-5">
+                <h5 class="card-title fw-bold fs-xs-2 fs-sm-2">
+                  Desain Grafis
+                </h5>
+                <p class="card-text px-3 fs-xs-1 fs-sm-1 fs-md-1">
                   Tim desain grafis kami siap membantu Anda dalam menciptakan
                   identitas visual yang kuat untuk bisnis Anda.
                 </p>
@@ -160,8 +172,8 @@
         </div>
       </figure>
       <!-- galeri -->
-      <figure id="gallery" style="padding-top: 100px; height: 100vh">
-        <h1 class="text-center fw-bolder">
+      <figure id="gallery">
+        <h1 class="text-center fw-bolder fs-xs-2 fs-sm-2 fs-md-2">
           <span> Galeri </span> <span style="color: #e02424"> Produk </span>
         </h1>
         <div
@@ -174,21 +186,21 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row carousel">
-                <div class="col-4">
+                <div class="col-lg-4 col-md-4 col-sm-6">
                   <img
                     src="assets/img/img1.jpg"
                     class="d-block w-100"
                     alt="..."
                   />
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-md-4 col-sm-6">
                   <img
-                    src="assets/img/img4.jpg"
+                    src="assets/img/img2.jpg"
                     class="d-block w-100"
                     alt="..."
                   />
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-md-4 col-sm-6">
                   <img
                     src="assets/img/img3.jpg"
                     class="d-block w-100"
@@ -199,23 +211,23 @@
             </div>
             <div class="carousel-item">
               <div class="row carousel">
-                <div class="col-4">
-                  <img
-                    src="assets/img/img1.jpg"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-md-4 col-sm-6">
                   <img
                     src="assets/img/img4.jpg"
                     class="d-block w-100"
                     alt="..."
                   />
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-md-4 col-sm-6">
                   <img
-                    src="assets/img/img3.jpg"
+                    src="assets/img/img5.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                  <img
+                    src="assets/img/img6.jpg"
                     class="d-block w-100"
                     alt="..."
                   />
@@ -246,24 +258,32 @@
     </section>
     <article class="container">
       <!-- tentang -->
-      <div id="aboutUs" class="border-section">
+      <div id="aboutUs">
         <div class="row">
-          <h1 class="text-center fw-bolder mt-5">
+          <h1 class="text-center fw-bolder mt-5 fs-xs-2 fs-sm-2 fs-md-2">
             <span style="color: #e02424">Tentang</span> <span>Kami</span>
           </h1>
           <div class="border border-visi mt-5">
             <div class="visi-content">
-              <h3 class="text-center text-capitalize mb-4">Visi</h3>
-              <p class="h5 text-center" style="font-weight: normal">
+              <h3
+                class="text-center text-capitalize mb-4 fw-bold fs-xs-2 fs-sm-2 fs-md-2"
+              >
+                Visi
+              </h3>
+              <p class="h5 text-center fw-normal fs-xs-1 fs-sm-1 fs-md-1">
                 Memberikan produk digital printing berkualitas dengan biaya
                 semurah mungkin. Kami percaya bahwa kualitas tidak harus mahal,
                 dan kami berkomitmen untuk memberikan layanan yang terjangkau
                 tanpa mengorbankan kualitas.
               </p>
             </div>
-            <div class="visi-content">
-              <h3 class="text-center text-capitalize mb-4">Misi</h3>
-              <p class="h5 text-center" style="font-weight: normal">
+            <div class="misi-content">
+              <h3
+                class="text-center text-capitalize mb-4 fw-bold fs-xs-2 fs-sm-2 fs-md-2"
+              >
+                Misi
+              </h3>
+              <p class="h5 text-center fw-normal fs-xs-1 fs-sm-1 fs-md-1">
                 Memberikan produk digital printing berkualitas dengan biaya
                 semurah mungkin. Kami percaya bahwa kualitas tidak harus mahal,
                 dan kami berkomitmen untuk memberikan layanan yang terjangkau
@@ -273,20 +293,20 @@
           </div>
         </div>
       </div>
-      <div class="form row mx-5" id="contactUs">
-        <h1 class="text-center fw-bolder mt-5">
+      <div class="form row" id="contactUs">
+        <h1 class="text-center fw-bolder mt-5 fs-xs-2 fs-sm-2 fs-md-2">
           <span> Hubungi </span> <span style="color: #e02424"> Kami </span>
         </h1>
         <form class="row g-2">
-          <div class="col-6 mb-3">
+          <div class="col-6 mb-3 mb-sm-1">
             <label for="firstName" class="form-label">Nama Depan</label>
             <input type="text" class="form-control" id="firstName" />
           </div>
-          <div class="col-6 mb-3">
+          <div class="col-6 mb-3 mb-sm-1">
             <label for="lastName" class="form-label">Nama Belakang</label>
             <input type="text" class="form-control" id="lastName" />
           </div>
-          <div class="col-12 mb-3">
+          <div class="col-12 mb-3 mb-sm-1">
             <label for="emailAddress" class="form-label">Alamat Email</label>
             <input
               type="email"
@@ -295,7 +315,7 @@
               placeholder="username@mail.com"
             />
           </div>
-          <div class="mb-3">
+          <div class="mb-3 mb-sm-1">
             <label for="experience" class="form-label">Pesan / Catatan</label>
             <textarea
               class="form-control"
@@ -315,10 +335,10 @@
       </div>
       <figure
         class="d-flex flex-column justify-content-center align-items-center"
-        style="height: 100vh"
+        style="min-height: 100vh"
         id="lokasi"
       >
-        <h1 class="text-center fw-bolder">
+        <h1 class="text-center fw-bolder fs-xs-2 fs-sm-2 fs-md-2">
           <span style="color: #e02424"> Lokasi </span> <span> ZoraStamp </span>
         </h1>
         <div class="container" data-aos="zoom-in-up" s>
@@ -334,88 +354,59 @@
           ></iframe>
         </div>
       </figure>
-      <!-- Modal -->
-      <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">
-                Modal title
-              </h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body d-flex justify-content-between">
-              <img
-                src="assets/img/img1.jpg"
-                alt="img"
-                class="w-50"
-                style="border-radius: 15px"
-              />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                voluptatem aperiam nesciunt placeat eligendi sit consequatur,
-                exercitationem nulla architecto similique error fugit maxime.
-                Nesciunt tempore pariatur fugiat molestias, cumque tempora?
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-danger"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
     </article>
     <footer>
       <div class="container">
         <div class="row">
-          <div class="footer-left col-6">
-            <h4 class="text-center fw-bolder">Alamat ZoraStamp</h4>
-            <p>
+          <div class="footer-left col-lg-6 col-md-12">
+            <h4 class="text-center fw-bolder fs-xs-2 fs-sm-2 fs-md-2">
+              Alamat ZoraStamp
+            </h4>
+            <p class="fs-xs-1 fs-sm-1 fs-md-1">
               Jl. Imam Bonjol, Bansir Laut, Kec.Pontianak Tenggara, Kota
               Pontianak, Kalimantan Barat 78243
             </p>
           </div>
-          <div class="footer-right col-6">
-            <h4 class="text-center fw-bolder">Hubungi Kami</h4>
-            <ul>
-              <li>
-                <a href="https://wa.me/1234567890"
-                  ><i class="bi bi-whatsapp"></i><br />0812345678</a
+          <div class="footer-right col-lg-6 col-md-12">
+            <h4 class="text-center fw-bolder fs-xs-2 fs-sm-2 fs-md-2">
+              Hubungi Kami
+            </h4>
+            <ul class="list-unstyled d-flex justify-content-center">
+              <li class="me-3">
+                <a
+                  href="https://wa.me/1234567890"
+                  class="fs-xs-1 fs-sm-1 fs-md-1"
                 >
+                  <i class="bi bi-whatsapp"></i><br />
+                  0812345678
+                </a>
+              </li>
+              <li class="me-3">
+                <a
+                  href="mailto:info@example.com"
+                  class="fs-xs-1 fs-sm-1 fs-md-1"
+                >
+                  <i class="bi bi-envelope-at-fill"></i><br />
+                  ZoraStamp@Gmail.com
+                </a>
+              </li>
+              <li class="me-3">
+                <a
+                  href="https://instagram.com/example"
+                  class="fs-xs-1 fs-sm-1 fs-md-1"
+                >
+                  <i class="bi bi-instagram"></i><br />
+                  ZoraStamp
+                </a>
               </li>
               <li>
-                <a href="mailto:info@example.com"
-                  ><i class="bi bi-envelope-at-fill"></i
-                  ><br />ZoraStamp@Gmail.com</a
+                <a
+                  href="https://facebook.com/example"
+                  class="fs-xs-1 fs-sm-1 fs-md-1"
                 >
-              </li>
-              <li>
-                <a href="https://instagram.com/example"
-                  ><i class="bi bi-instagram"></i><br />ZoraStamp</a
-                >
-              </li>
-              <li>
-                <a href="https://facebook.com/example"
-                  ><i class="bi bi-facebook"></i> <br />
-                  ZoraPrinting</a
-                >
+                  <i class="bi bi-facebook"></i><br />
+                  ZoraPrinting
+                </a>
               </li>
             </ul>
           </div>
