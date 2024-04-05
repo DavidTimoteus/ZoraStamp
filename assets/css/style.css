@@ -129,7 +129,6 @@ body {
 #about .container {
     position: relative;
     z-index: 1;
-    /* Ensure content is above the border */
 }
 
 /* Home */
@@ -210,7 +209,6 @@ footer {
 
 .footer-bs .footer-brand img {
     margin-right: 10px;
-    /* Adjust margin between logo and text */
 }
 
 
@@ -281,10 +279,11 @@ footer {
         align-items: center;
     }
 
-    .card-img{
+    .card-img {
         width: 90%;
     }
-    .card-body{
+
+    .card-body {
         padding: 3%;
         margin: 0rem 2rem;
     }
@@ -339,7 +338,7 @@ footer {
     .carousel-control-prev,
     .carousel-control-next,
     .carousel-inner {
-        padding-top: 10vh;  
+        padding-top: 10vh;
     }
 
     .carousel-item img,
@@ -348,5 +347,60 @@ footer {
         padding-right: 5vh;
         height: 60vh;
         width: auto;
+    }
+}
+
+/* tablet */
+@media (max-width:768px) {
+    .galleryWrap {
+        columns: 2;
+    }
+
+    #about {
+        padding-top: 180px !important;
+    }
+
+    #beranda {
+        padding-top: 180px !important;
+    }
+
+    #layanan {
+        margin-top: 180px !important;
+    }
+
+    #lokasi {
+        padding-top: 180px !important;
+    }
+
+    footer {
+        padding-top: 180px !important;
+    }
+}
+
+/* phone */
+@media (max-width:450px) {
+    #about {
+        padding-top: 320px !important;
+    }
+
+    #beranda {
+        padding-top: 320px !important;
+    }
+
+    #layanan {
+        margin-top: 200px !important;
+    }
+
+    #lokasi {
+        padding-top: 320px !important;
+    }
+
+    footer {
+        padding-top: 320px !important;
+
+    }
+
+    .footer-right ul li {
+        display: block;
     }
 }
